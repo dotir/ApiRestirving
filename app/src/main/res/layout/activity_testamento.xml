@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Testamento">
+
+    <ScrollView
+        android:id="@+id/ScrollView01"
+        android:layout_width="356dp"
+        android:layout_height="198dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/lblInfo"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/lblInfo"
+        app:layout_constraintTop_toBottomOf="@+id/lblInfo"
+        tools:ignore="MissingConstraints">
+
+        <EditText
+            android:id="@+id/txtTestamente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="left|top"
+            android:inputType="text|textMultiLine"
+            android:lineSpacingExtra="5sp" />
+
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnSalirTestamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_rounded_border"
+        android:text="Salir"
+        app:layout_constraintEnd_toEndOf="@+id/btnLeerTestamento"
+        app:layout_constraintStart_toStartOf="@+id/btnLeerTestamento"
+        app:layout_constraintTop_toBottomOf="@+id/btnLeerTestamento" />
+
+    <TextView
+        android:id="@+id/lblInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Testamento"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnGuardarTestamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_rounded_border"
+        android:text="Guardar"
+        app:layout_constraintEnd_toEndOf="@+id/ScrollView01"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/ScrollView01"
+        app:layout_constraintTop_toBottomOf="@+id/ScrollView01" />
+
+    <Button
+        android:id="@+id/btnLeerTestamento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_rounded_border"
+        android:text="Leer"
+        app:layout_constraintEnd_toEndOf="@+id/btnGuardarTestamento"
+        app:layout_constraintStart_toStartOf="@+id/btnGuardarTestamento"
+        app:layout_constraintTop_toBottomOf="@+id/btnGuardarTestamento" />
+
+</android.support.constraint.ConstraintLayout>
